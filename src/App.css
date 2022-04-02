@@ -24,6 +24,30 @@
   color: white;
 }
 
+.App-header a:link {
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
+
+.App-header a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
+
+.App-header a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
+
+.App-header a:active {
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +60,4 @@
     transform: rotate(360deg);
   }
 }
+
