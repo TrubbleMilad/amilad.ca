@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Anthony <a href='./Twitch.js'>M</a>ilad</p>
+        <p>Anthony Milad</p>
       </header>
     </div>
   );
