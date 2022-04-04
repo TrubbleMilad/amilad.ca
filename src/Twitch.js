@@ -1,4 +1,5 @@
 import './Twitch.css';
+import ResponsiveAppBar from './NavMenu';
 import { TwitchEmbed, TwitchChat, TwitchClip, TwitchPlayer } from 'react-twitch-embed';
  
 const Stream = () => {
@@ -18,7 +19,13 @@ const Stream = () => {
       />
       {/* <TwitchChat channel="trubblemilad" theme="dark" /> */}
       {/* <TwitchClip clip="Highlight: Clutch Reconnection from Brand" parent={['amilad.ca']} /> */}
-      <TwitchPlayer video="1299628885" autoplay="false"/>
+      <br/>
+      <TwitchPlayer
+        video="1299628885"
+        autoplay="false"
+        height="80vh"
+        width="100%"
+      />
     </div>
   );
 }
