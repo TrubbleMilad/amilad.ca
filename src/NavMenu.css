@@ -5,9 +5,23 @@
 .logo{
     min-width: 1px;
     max-width: 160px;
+    
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2.5s;
+    animation-timing-function:cubic-bezier(1, 0, 0, 1);
+    animation-fill-mode: forwards;
+    
 }
 
-
+@keyframes fade-in {
+    99% {
+        opacity:1
+    }
+    100% {
+        opacity:1
+    }
+}
 
 @media (maxWidth: '767px') {
     

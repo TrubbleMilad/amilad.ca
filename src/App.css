@@ -13,18 +13,17 @@
   font-size: calc(50px + 2vmin);
   color: white;
 
-  animation-delay: 700ms;
+  /* animation-delay: 700ms;
   animation-name: slide;
   animation-duration: 1s;
   animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 .alert-shown {
   transition: all 2s linear;
   animation-name: slide-opacity;
   animation-duration: 1s;
-  animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
@@ -32,8 +31,6 @@
   height: 0;
   opacity: 0;
 }
-
-
 
 @keyframes slide-opacity {
   0% {
@@ -54,12 +51,6 @@
   100% {
     transform: translate(0, 0);
     opacity:1
-  }
-}
-
-@keyframes rotate{
-  100%{
-    transform:rotate(360deg);
   }
 }
 
