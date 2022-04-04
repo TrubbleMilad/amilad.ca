@@ -9,14 +9,15 @@ import {
     Route
 } from "react-router-dom";
 import About from './About'
+import Twitch from './Twitch'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>       </Route>
-        
         <Route path='About' element={<About />}> </Route>
+        <Route path='Twitch' element={<Twitch />}> </Route>
       </Routes>
     </BrowserRouter>
     

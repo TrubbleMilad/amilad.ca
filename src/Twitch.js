@@ -4,7 +4,7 @@ function Twitch() {
   return (
     <div>
       <header>
-        <h1><a href='/'>T</a>rubbleMilad</h1>
+        <h1>TrubbleMilad</h1>
       </header>
       <body>
         <p>Here is where I play twitch</p>

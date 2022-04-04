@@ -1,52 +1,57 @@
 .App {
   text-align: center;
+  background-color: rgb(44, 120, 182);
 }
 
 .App-header {
   background-color: rgb(44, 120, 182);
-  min-height: 100vh;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(50px + 2vmin);
   color: white;
+
+  animation-delay: 700ms;
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
-.App-header a:link {
-  color: white;
-  text-decoration: none;
-  cursor: default;
+.alert-shown {
+  transition: all 2s linear;
+  animation-name: slide-opacity;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
-.App-header a:visited {
-  color: white;
-  text-decoration: none;
-  cursor: default;
+.alert-hidden {
+  height: 0;
+  opacity: 0;
 }
 
-.App-header a:hover {
-  color: white;
-  text-decoration: none;
-  cursor: default;
-}
-
-.App-header a:active {
-  color: white;
-  text-decoration: none;
-  cursor: default;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes slide-opacity {
+  0% {
+    transform: translate(0, -50px);
+    opacity:.1
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translate(0, 0);
+    opacity:1
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, -50px);
+    opacity:1
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity:1
   }
 }
 
