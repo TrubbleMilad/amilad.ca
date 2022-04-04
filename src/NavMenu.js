@@ -66,7 +66,7 @@ const ResponsiveAppBar = () => {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             >
-              <img src={Logo} alt="logo" class='logo' id='navmenulogo'/>
+              <Link to="/"><img src={Logo} alt="logo" class='logo' id='navmenulogo'/></Link>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

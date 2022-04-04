@@ -6,7 +6,7 @@ const Stream = () => {
   return (
     <div>
       <header>
-        <h1>TrubbleMilad's Twitch</h1>
+        
       </header>
       <TwitchEmbed
         channel="trubblemilad"

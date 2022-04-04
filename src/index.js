@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import {
     BrowserRouter,
     Routes,
@@ -14,13 +15,8 @@ import Twitch from './Twitch'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<App />}>       </Route>
-        <Route path='About' element={<About />}> </Route>
-        <Route path='Twitch' element={<Twitch />}> </Route>
-      </Routes>
+      <App></App>
     </BrowserRouter>
-    
   </React.StrictMode>,
   document.getElementById('root')
 );
