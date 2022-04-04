@@ -1,6 +1,7 @@
 import './App.css';
 import ResponsiveAppBar from './NavMenu';
 import React, {useState, useEffect} from 'react';
+import Logo from './Images/TrubbleMilad - Gold.png'
 
 function App() {
   const [isShowingAlert, setShowingAlert] = useState(false);
@@ -8,7 +9,7 @@ function App() {
     console.log('asldkfj');
     setTimeout(() => {
       setShowingAlert(true);
-    }, 700);
+    });
   });
 
   return (
@@ -17,7 +18,8 @@ function App() {
         <ResponsiveAppBar className="NavBar"/>
       </div>
       <header className="App-header">
-        <h1 onClick={() => setShowingAlert(true)}>Anthony Milad</h1>
+        <img src={Logo} alt="logo" class='mainlogo'/>
+        {/* <h1>Anthony Milad</h1> */}
       </header>
     </div>
   );
