@@ -17,7 +17,16 @@ import { Link } from "react-router-dom";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Logo from './Images/TM - Gold.png'
 
-const pages = ['About', 'Twitch'];
+const pages = [
+  {
+    pageName: 'About',
+    pageLink: 'about'
+  },
+  {
+    pageName: 'Twitch',
+    pageLink: 'twitch'
+  }
+];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 let theme = createTheme({
   palette: {
@@ -90,8 +99,8 @@ const ResponsiveAppBar = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                  <MenuItem key={page.pageLink} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page.pageName}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -106,13 +115,13 @@ const ResponsiveAppBar = () => {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <Link to={page} style={{ textDecoration: 'none' }}>
+                <Link to={page.pageLink} style={{ textDecoration: 'none' }}>
                   <Button
-                    key={page}
+                    key={page.pageLink}
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: 'white', display: 'block' }}
                   >
-                    {page}
+                    {page.pageName}
                   </Button>
                 </Link>
               ))}
