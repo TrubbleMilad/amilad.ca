@@ -8,25 +8,14 @@
     
     opacity: 0;
     animation-name: fade-in;
-    animation-duration: 4s;
+    animation-duration: 2.2s;
     animation-timing-function:cubic-bezier(1, 0, 0, 1);
     animation-fill-mode: forwards;
 }
 
 @keyframes fade-in {
-    90% {
-        opacity:1
-    }
     100% {
         opacity:1
         
     }
-}
-
-@media (maxWidth: '767px') {
-    
-}
-
-@media (maxWidth: '400px') {
-    
 }

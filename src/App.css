@@ -23,7 +23,7 @@
 .alert-shown {
   transition: all 2s linear;
   animation-name: slide-opacity;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -67,7 +67,7 @@
 
 .mainlogo{
   animation-name: fly-left;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function:cubic-bezier(1, 0, 0, 1);
   animation-fill-mode: forwards;
 }

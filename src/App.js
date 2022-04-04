@@ -10,7 +10,7 @@ function App() {
     setTimeout(() => {
       setShowingAlert(true);
     });
-  });
+});
 
   return (
     <div className="App">
