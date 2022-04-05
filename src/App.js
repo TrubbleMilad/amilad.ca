@@ -2,7 +2,7 @@ import './App.css';
 import ResponsiveAppBar from './NavMenu';
 import Logo from './Images/TrubbleMilad - Gold.png'
 
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from './Home'
 import About from './About'
 import Twitch from './Twitch'
