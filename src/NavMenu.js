@@ -23,13 +23,13 @@ const pages = [
     pageLink: 'about'
   },
   {
+    pageName: 'Family',
+    pageLink: 'family'
+  },
+  {
     pageName: 'Twitch',
     pageLink: 'twitch'
   },
-  {
-    pageName: 'Family',
-    pageLink: 'family'
-  }
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 let theme = createTheme({
