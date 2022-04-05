@@ -25,6 +25,10 @@ const pages = [
   {
     pageName: 'Twitch',
     pageLink: 'twitch'
+  },
+  {
+    pageName: 'Family',
+    pageLink: 'https://family.amilad.ca/'
   }
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
