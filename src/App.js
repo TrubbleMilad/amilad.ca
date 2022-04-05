@@ -20,6 +20,9 @@ function App() {
           <Route exact path='/' element={<Home />}> </Route>
           <Route path='About' element={<About />}> </Route>
           <Route path='Twitch' element={<Twitch />}> </Route>
+          <Route path='Family' component={()=>{
+            window.location.replace('https://family.amilad.ca')
+            return null; }}/>
       </Routes>
     </div>
   );

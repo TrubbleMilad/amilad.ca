@@ -28,7 +28,7 @@ const pages = [
   },
   {
     pageName: 'Family',
-    pageLink: 'https://family.amilad.ca/'
+    pageLink: 'family'
   }
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
