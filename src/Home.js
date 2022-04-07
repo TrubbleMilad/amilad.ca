@@ -1,5 +1,5 @@
 import './App.css';
-import Logo from './Images/TrubbleMilad - Gold.png'
+import Logo from './Images/Logo-1024.png'
 
 function Home() {
   return (

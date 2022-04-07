@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 import { Link } from "react-router-dom";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Logo from './Images/TM - Gold.png'
+import Logo from './Images/Logo-64.png'
 
 const pages = [
   {
